@@ -54,8 +54,8 @@
         }, 15000);
         
         // Contact form handling with enhanced animation
-        document.getElementById('contactForm').addEventListener('submit', function(e) {
-            e.preventDefault();
+       // document.getElementById('contactForm').addEventListener('submit', function(e) {
+          //  e.preventDefault();
             
             const button = this.querySelector('.btn-submit');
             const originalText = button.textContent;
