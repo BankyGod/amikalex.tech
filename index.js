@@ -54,36 +54,36 @@
         }, 15000);
         
         // Contact form handling with enhanced animation
-       document.getElementById('contactForm').addEventListener('submit', function(e) {
-          e.preventDefault();
+       // document.getElementById('contactForm').addEventListener('submit', function(e) {
+       //    e.preventDefault();
             
-            const button = this.querySelector('.btn-submit');
-            const originalText = button.textContent;
+       //      const button = this.querySelector('.btn-submit');
+       //      const originalText = button.textContent;
             
-            // Add loading animation
-            button.textContent = 'Sending...';
-            button.style.background = 'linear-gradient(45deg, #28a745, #20c997)';
+       //      // Add loading animation
+       //      button.textContent = 'Sending...';
+       //      button.style.background = 'linear-gradient(45deg, #28a745, #20c997)';
             
-            // Get form data
-            const formData = new FormData(this);
-            const data = Object.fromEntries(formData);
+       //      // Get form data
+       //      const formData = new FormData(this);
+       //      const data = Object.fromEntries(formData);
             
-            // Simulate sending (in a real application, you would send this to a server)
-            setTimeout(() => {
-                console.log('Form submitted:', data);
+       //      // Simulate sending (in a real application, you would send this to a server)
+       //      setTimeout(() => {
+       //          console.log('Form submitted:', data);
                 
-                // Show success animation
-                button.textContent = 'Message Sent! ✓';
-                button.style.background = 'linear-gradient(45deg, #28a745, #20c997)';
+       //          // Show success animation
+       //          button.textContent = 'Message Sent! ✓';
+       //          button.style.background = 'linear-gradient(45deg, #28a745, #20c997)';
                 
-                // Reset form and button after delay
-                setTimeout(() => {
-                    this.reset();
-                    button.textContent = originalText;
-                    button.style.background = 'linear-gradient(45deg, #333333, #000000)';
-                }, 2000);
-            }, 1000);
-        });
+       //          // Reset form and button after delay
+       //          setTimeout(() => {
+       //              this.reset();
+       //              button.textContent = originalText;
+       //              button.style.background = 'linear-gradient(45deg, #333333, #000000)';
+       //          }, 2000);
+       //      }, 1000);
+       //  });
 
         // Enhanced smooth scrolling with easing
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
